@@ -1,0 +1,512 @@
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{text-decoration: none; color: rgb(255, 174, 184);}
+body{
+    font-family: "LotteMartDream";
+    font-size: 18px;
+    line-height: 26px;
+    color: #333;
+}
+@font-face {
+    font-family: 'LotteMartDream';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff2') format('woff2'), url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'LotteMartDream';
+    font-style: normal;
+    font-weight: 700;
+    src: url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff2') format('woff2'), url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'LotteMartDream';
+    font-style: normal;
+    font-weight: 300;
+    src: url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff2') format('woff2'), url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff') format('woff');
+  }
+  .lottemartdream * {
+   font-family: 'LotteMartDream', sans-serif;
+  }
+  /*헤더*/
+  #header{
+    width: 100%;
+    height: 110px;
+}
+.header_inner{
+    width: 1324px;
+    margin: auto;
+    color: #fff;
+}
+.logo{
+    padding-top: 15px;
+}
+.nav{
+  float: right;
+  margin-top: 10px;
+}
+.nav> li{
+  float: left;
+  margin: 0 30px;
+}
+.nav> li> a{
+  display: block;
+  padding: 30px 0 20px;
+  width: 100px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.nav> li> a:hover{
+  background-color: #fff;
+  border-bottom: 2px solid rgb(255, 174, 184);
+}
+
+/*서브메뉴 꾸미기*/
+.sub{
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 8px 7px rgba(156, 156, 156, 0.6);
+  width: 100%;
+  height: 290px;
+  position: absolute;/*body가 기준*/
+  left: 0;
+  top: 100px;
+  display: none;/*안보이게 만들어 주기!*/
+  z-index:99;
+}
+.sub div{
+  width: 1324px;
+  margin: auto;
+}
+.sub ul{
+  float: left;
+  width: 100px;/*메인메뉴 a태그랑 같은 너비*/
+  text-align: center;
+  padding: 20px 0;
+  box-sizing: border-box;
+  margin: 0 30px;
+}
+.sub div ul:nth-child(1){
+  margin-left: 713px;
+}
+
+.sub ul a{
+  font-weight: bold;
+  display: block;
+  padding: 15px 0;
+}
+.sub ul a:hover{
+  border-bottom: 2px solid rgb(255, 174, 184);
+}
+/*서브메뉴 꾸미기*/
+/*메인배너*/
+#contents1{
+    background: url(../images/night_bg.jpg) no-repeat center;
+    width: 100%;
+    height: 755px;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+}
+.contents1_inner{
+  width: 1320px;
+  margin: auto;
+  position: relative;
+}
+#moon{
+    background-color: rgb(253, 242, 167);
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    position: absolute;
+    top: -20px;
+    left: 50px;
+}
+#moon h2{margin-top: 70px;}
+#moon img{margin: 20px 0;}
+#moon p:nth-child(7){padding-top: 30px;}
+.efect{
+    position: absolute;
+    left: -150px;
+}
+.shine{
+    position: relative;
+    width: 1925px;
+    height: 755px;
+}
+.shine img{
+    position: absolute;
+}
+.shine img:nth-child(1){
+    top: 100px;
+    right: 500px;
+    transform: scale(70%);
+    animation: star 1s 3s ease infinite alternate;
+}
+.shine img:nth-child(2){
+    top: 150px;
+    right: 700px;
+    transform: scale(50%);
+    animation: star 1s 6s ease infinite alternate;
+}
+.shine img:nth-child(3){
+    top: 300px;
+    right: 1000px;
+    transform: scale(60%);
+    transform: rotate(-15deg);
+    animation: star 1s 5s ease infinite alternate;
+}
+.shine img:nth-child(4){
+    top: 400px;
+    left: -90px;
+    transform: scale(50%);
+    transform: rotate(20deg);
+    animation: star 1s 2s ease infinite alternate;
+}
+.shine img:nth-child(5){
+    top: 600px;
+    left: 200px;
+    z-index: 4;
+    animation: star 1s 4s ease infinite alternate;
+}
+.shine img:nth-child(6){
+    transform: scale(90%);
+    transform: rotate(30deg);
+    animation: star 1s 4s ease infinite alternate;
+}
+/*별반짝임*/
+@keyframes star{
+    0%{opacity: 1;}
+    100%{opacity: 0.4;}
+}
+/*별반짝임*/
+.melti{
+    position: absolute;
+    bottom: -30px;
+    right: 180px;
+}
+.house{
+    position: absolute;
+    bottom: -90px;
+    right: -305px;
+    z-index: 4;
+}
+.pen{
+    position: absolute;
+    z-index: 7;
+    bottom: 120px;
+    right: 335px;
+}
+.melto{
+    position: absolute;
+    z-index: 9;
+    bottom: -150px;
+    right: 0px;
+}
+.cat{
+    position: absolute;
+    bottom: 130px;
+    right: -190px;
+}
+/*메인배너*/
+/*브랜드 로고*/
+#contents2{
+  text-align: center;
+  margin: auto;
+  height: 800px;
+  width: 1100px;
+}
+.sub1_title1{
+  display: inline-block;
+  border-bottom: 2px solid rgb(255, 174, 184);
+  padding-bottom: 10px;
+  margin-top: 100px;
+}
+.logobox{
+  display: inline-block;
+  margin-top: 50px;
+}
+.logobox li{
+  float: left;
+  box-sizing: border-box;
+  padding-top: 30px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+.logobox li:nth-child(1){
+  border: 3px dashed rgb(255, 174, 184);
+}
+.logobox li:nth-child(2){
+  margin: 0 50px;
+  border: 3px dashed rgb(32, 32, 33);
+}
+.logobox li:nth-child(3){
+  border: 3px dashed rgb(100, 177, 223);
+}
+.btn{
+  position: relative;
+}
+.btn h3{
+  color: rgb(255, 174, 184);
+  font-size: 30px;
+  border: rgb(255, 174, 184) solid 2px;
+  border-radius: 30px;
+  display: inline-block;
+  padding: 15px 25px;
+  background-color: #fff;
+  top: 50px;
+  right: 50%;
+  margin-right: -99px;
+  position: absolute;
+  z-index: 2;
+  transform: translateY(0);
+  transition: all 0.6s;
+}
+.btn h5{
+  background-color: rgb(255, 174, 184);
+  width: 198px;
+  height: 60px;
+  border-radius: 30px;
+  display: inline-block;
+  position: absolute;
+  top: 60px;
+  right: 50%;
+  margin-right: -99px;
+}
+.btn h3:hover{
+  transform: translateY(10px);
+}
+/*팝업*/
+.popup{
+  position: relative;
+  z-index: 6;
+  top: -500px;
+  left: -130px;
+  display: none;
+}
+.popup p{
+  padding: 5px;
+  position: absolute;
+  top: 10px;
+  right: -150px;
+  font-size: 25px;
+}
+/*팝업*/
+/*브랜드 로고*/
+/*캐릭터 소개*/
+#contents3{
+  background: rgb(254, 253, 214) url(../images/sub1_bg1.jpg) no-repeat center;
+  width: 100%;
+  height: 825px;
+  margin: 50px auto;
+  text-align: center;
+}
+.contents3_inner{
+  width: 1320px;
+  height: 825px;
+  margin: auto;
+  position: relative;
+}
+.sub1_title2{
+  display: inline-block;
+  border-bottom: 2px solid rgb(253, 202, 117);
+  margin-top: 30px;
+  padding-bottom: 10px;
+}
+.big_melto{
+  position: absolute;
+  bottom: 0;
+  left: 350px;
+}
+.ice{
+  position: absolute;
+  bottom: 0;
+  left: 550px;
+  z-index: 4;
+}
+.big_melti{
+  position: absolute;
+  bottom: 0;
+  right: 350px;
+}
+.big_blue img{
+  position: absolute;
+  top: 200px;
+  left: 50px;
+}
+.big_blue p{
+  position: absolute;
+  font-weight: bold;
+  top: 280px;
+  left: 100px;
+  z-index: 5;
+}
+.small_blue{
+  position: absolute;
+  top: 150px;
+  left: 30px;
+  z-index: 5;
+}
+.big_pink img{
+  position: absolute;
+  top: 200px;
+  right: 50px;
+}
+.big_pink p{
+  position: absolute;
+  font-weight: bold;
+  top: 290px;
+  right: 90px;
+  z-index: 5;
+}
+.small_pink{
+  position: absolute;
+  bottom: 280px;
+  right: 50px;
+  z-index: 5;
+}
+.melto_color{
+  position: absolute;
+  bottom: 40px;
+  left: 0px;
+  animation: rotate 10s linear infinite;
+  transform-origin: 50% 50%;
+}
+.melti_color{
+  position: absolute;
+  bottom: 40px;
+  right: 0px;
+  animation: rotate 10s linear infinite;
+  transform-origin: 50% 50%;
+}
+/*애니메이션*/
+@keyframes rotate{
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+}
+/*애니메이션*/
+.left_text{
+  position: absolute;
+  bottom: 140px;
+  left: 90px;
+  z-index: 5;
+  font-size: 18px;
+}
+.right_text{
+  position: absolute;
+  bottom: 140px;
+  right: 85px;
+  z-index: 5;
+  font-size: 18px;
+}
+.name1{
+  position: absolute;
+  top: 200px;
+  left: 65px;
+  z-index: 6;
+}
+.name2{
+  position: absolute;
+  z-index: 6;
+  right: 80px;
+  bottom: 325px;
+}
+.point1{
+  position: absolute;
+  bottom: 150px;
+  left: 330px;
+  z-index: 8;
+  transform: rotate(210deg);
+}
+.point2{
+  position: absolute;
+  top: 400px;
+  left: 520px;
+  z-index: 8;
+}
+.point3{
+  position: absolute;
+  bottom: 150px;
+  right: 300px;
+  z-index: 8;
+  transform: rotate(20deg);
+}
+.point4{
+  position: absolute;
+  top: 350px;
+  right:500px;
+  z-index: 8;
+  transform: rotate(-80deg);
+}
+.cup{
+  position: absolute;
+  top: 370px;
+  left: 570px;
+  z-index: 10;
+  font-size: 18px;
+  font-weight: bold;
+}
+.corn{
+  position: absolute;
+  top: 325px;
+  right: 550px;
+  z-index: 10;
+  font-size: 18px;
+  font-weight: bold;
+}
+.blueberry{
+  position: absolute;
+  bottom: 115px;
+  left: 275px;
+  z-index: 10;
+  font-size: 18px;
+  font-weight: bold;
+}
+.strowberry{
+  position: absolute;
+  bottom: 185px;
+  right: 240px;
+  z-index: 10;
+  font-size: 18px;
+  font-weight: bold;
+}
+/*캐릭터 소개*/
+/*서비스*/
+#contents4{
+  text-align: center;
+  margin-top: 40px;
+  width: 100%;
+  height: 700px;
+}
+.sub1_title3{
+  display: inline-block;
+  border-bottom: 2px solid rgb(158, 195, 255);
+  padding-bottom: 10px;
+}
+.service{
+  display: inline-block;
+}
+.service li{
+  float: left;
+  position: relative;
+  top: 400px;
+  margin: 20px;
+}
+.service_inner{
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+}
+.brand{
+  background-color: rgb(243, 125, 132);
+}
+.school{
+  background-color: rgb(164, 220, 248);
+}
+.with{
+  background-color: rgb(252, 243, 154);
+}
+/*서비스*/

@@ -1,0 +1,643 @@
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{text-decoration: none; color: rgb(255, 174, 184);}
+body{
+    font-family: "LotteMartDream";
+    font-size: 16px;
+    line-height: 26px;
+    color: #333;
+}
+@font-face {
+    font-family: 'LotteMartDream';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff2') format('woff2'), url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'LotteMartDream';
+    font-style: normal;
+    font-weight: 700;
+    src: url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff2') format('woff2'), url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'LotteMartDream';
+    font-style: normal;
+    font-weight: 300;
+    src: url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff2') format('woff2'), url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff') format('woff');
+  }
+  .lottemartdream * {
+   font-family: 'LotteMartDream', sans-serif;
+  }
+/*헤더*/
+  #header{
+      width: 100%;
+      height: 110px;
+  }
+  .header_inner{
+      width: 1324px;
+      margin: auto;
+      color: #fff;
+  }
+  .logo{
+      padding-top: 15px;
+  }
+  .nav{
+    float: right;
+    margin-top: 10px;
+}
+.nav> li{
+    float: left;
+    margin: 0 30px;
+}
+.nav> li> a{
+    display: block;
+    padding: 30px 0 20px;
+    width: 100px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.nav> li> a:hover{
+    background-color: #fff;
+    border-bottom: 2px solid rgb(255, 174, 184);
+}
+
+/*서브메뉴 꾸미기*/
+.sub{
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 8px 7px rgba(156, 156, 156, 0.6);
+    width: 100%;
+    height: 290px;
+    position: absolute;/*body가 기준*/
+    left: 0;
+    top: 100px;
+    display: none;/*안보이게 만들어 주기!*/
+    z-index: 99;
+}
+.sub div{
+    width: 1324px;
+    margin: auto;
+}
+.sub ul{
+    float: left;
+    width: 100px;/*메인메뉴 a태그랑 같은 너비*/
+    text-align: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+    margin: 0 30px;
+}
+.sub div ul:nth-child(1){
+    margin-left: 713px;
+}
+
+.sub ul a{
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    padding: 15px 0;
+}
+.sub ul a:hover{
+    border-bottom: 2px solid rgb(255, 174, 184);
+}
+
+
+/*콘텐츠1*/
+#bg1{
+    background: url(../images/bg1.jpg) no-repeat center;
+    height: 822px;
+    text-align: center;
+    margin-top: 60px;
+    position: relative;
+}
+.title{
+    padding: 15px 0 10px 0;
+    border-bottom: 3px solid rgb(255, 174, 184);
+    margin-bottom: 20px;
+}
+.contents1{
+    width: 1324px;
+    height: 750px;
+    border-bottom: 3px solid rgb(255, 174, 184);
+    border-top: 3px solid rgb(255, 174, 184);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -380px;
+    margin-left: -650px;
+}
+.test{
+    text-align: center;
+}
+.icon{
+    float: left;
+    margin: 0 10px;
+    position: relative;
+    opacity: 1;
+}
+.icon:nth-child(1){
+    margin-left: 20px;
+}
+.icon:nth-child(5){
+    margin-left: 185px;
+}
+.text{
+    color: #fff;
+    opacity: 0;
+    transition: all 1s;
+}
+.text p{
+    position: absolute;
+    width: 145px;
+    top: 130px;
+    z-index: 2;
+    left: 75px;
+}
+.text h2{
+    position: absolute;
+    width: 190px;
+    top: 75px;
+    left: 55px;
+    z-index: 2;
+}
+.back{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.one .back{
+    background-color: rgb(200, 205, 255);
+}
+.two .back{
+    background-color: rgb(255, 213, 213);
+}
+.three .back{
+    background-color: rgb(199, 236, 185);
+}
+.four .back{
+    background-color: rgb(255, 221, 193);
+}
+.five .back{
+    background-color: rgb(233, 200, 255);
+}
+.six .back{
+    background-color: rgb(255, 223, 238);
+}
+.seven .back{
+    background-color: rgb(238, 231, 189);
+}
+
+.one .text{
+    text-shadow: 1px 1px 2px rgb(94, 98, 133);
+}
+.two .text{
+    text-shadow: 1px 1px 2px rgb(168, 114, 114);
+}
+.three .text{
+    text-shadow: 1px 1px 2px rgb(105, 148, 87);
+}
+.four .text{
+    text-shadow: 1px 1px 2px rgb(155, 106, 84);
+}
+.five .text{
+    text-shadow: 1px 1px 2px rgb(142, 110, 163);
+}
+.six .text{
+    text-shadow: 1px 1px 2px rgb(192, 117, 152);
+}
+.seven .text{
+    text-shadow: 1px 1px 2px rgb(180, 155, 100);
+}
+
+.icon:hover .text{
+    opacity: 1;
+}
+/*콘텐츠1*/
+
+/*콘텐츠2*/
+
+.title2{
+    padding: 10px 0 10px 0;
+    border-bottom: 3px solid rgb(255, 174, 184);
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+#contents2{
+    width: 1008px;
+    margin: auto;
+    height: 800px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+#contents2 li{
+    margin-bottom: 20px;
+}
+.pink{
+    background-color: rgb(255, 213, 214);
+    width: 499px;
+    height: 300px;
+    border-radius: 30px 0 0 0;
+    border: 2.5px solid rgb(255, 174, 184);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.pink img{
+    position: absolute;
+    bottom: -10px;
+    left: 145px;
+}
+.blue{
+    background-color: rgb(176, 223, 255);
+    width: 499px;
+    height: 300px;
+    border-radius: 0 0 30px 0;
+    border: 2.5px solid rgb(107, 114, 178);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.blue img{
+    position: absolute;
+    bottom: -10px;
+    left: 160px;
+}
+.boy{
+    border: 2.5px solid rgb(255, 174, 184);
+    border-radius: 0 30px 0 0;
+    position: relative;
+    width: 499px;
+    height: 300px;
+    color: rgb(255, 174, 184);
+    font-size: 25px;
+    font-weight: bold;
+}
+.boy img{
+    position: absolute;
+    left: 40px;
+    top: 25px;
+}
+.boy ul{
+    position: absolute;
+    top: 45px;
+    right: 60px;
+}
+.boy ul li:nth-child(1){
+    opacity: 0;
+    transition: 1s;
+}
+.boy ul li:nth-child(2){
+    opacity: 0;
+    transition: 1.5s;
+}
+.boy ul li:nth-child(3){
+    opacity: 0;
+    transition: 2s;
+}
+.boy ul li:nth-child(4){
+    opacity: 0;
+    transition: 2.5s;
+}
+.boy ul li:nth-child(5){
+    opacity: 0;
+    transition: 3s;
+}
+/*글자 순서대로*/
+.con2_hover:hover .boy img{
+    opacity: 1;
+}
+.con2_hover:hover .boy li{
+    opacity: 1;
+}
+/*글자 순서대로*/
+.girl{
+    border: 2.5px solid rgb(107, 114, 178);
+    border-radius: 0 0 0 30px;
+    position: relative;
+    width: 499px;
+    height: 300px;
+    color: rgb(107, 114, 178);
+    font-size: 25px;
+    font-weight: bold;
+}
+.girl img{
+    position: absolute;
+    left: 40px;
+    top: 25px;
+}
+.girl ul{
+    position: absolute;
+    top: 45px;
+    right: 60px;
+}
+.girl ul li:nth-child(1){
+    opacity: 0;
+    transition: 1s;
+}
+.girl ul li:nth-child(2){
+    opacity: 0;
+    transition: 1.5s;
+}
+.girl ul li:nth-child(3){
+    opacity: 0;
+    transition: 2s;
+}
+.girl ul li:nth-child(4){
+    opacity: 0;
+    transition: 2.5s;
+}
+.girl ul li:nth-child(5){
+    opacity: 0;
+    transition: 3s;
+}
+/*글자 순서대로*/
+.con2_hover:hover .girl img{
+    opacity: 1;
+}
+.con2_hover:hover .girl li{
+    opacity: 1;
+}
+/*글자 순서대로*/
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+
+.pink h3{
+    color: rgb(255, 174, 184);
+    font-size: 30px;
+    border: rgb(255, 174, 184) solid 2px;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #fff;
+    top: 30px;
+    right: 50%;
+    margin-right: -81px;
+    position: absolute;
+    z-index: 2;
+    transform: translateY(0);
+    transition: all 0.6s;
+}
+.pink_btn{
+    background-color: rgb(230, 124, 136);
+    width: 162px;
+    height: 50px;
+    border-radius: 20px;
+    display: inline-block;
+    position: absolute;
+    top: 37px;
+    right: 50%;
+    margin-right: -81px;
+}
+.blue h3{
+    color: rgb(107, 114, 178);
+    font-size: 30px;
+    border: rgb(107, 114, 178) solid 2px;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #fff;
+    top: 30px;
+    right: 50%;
+    margin-right: -83px;
+    position: absolute;
+    z-index: 2;
+    transform: translateY(0);
+    transition: all 0.6s;
+}
+.blue_btn{
+    background-color: rgb(79, 85, 143);
+    width: 166px;
+    height: 50px;
+    border-radius: 20px;
+    display: inline-block;
+    position: absolute;
+    top: 37px;
+    right: 50%;
+    margin-right: -81px;
+}
+
+.pink h3:hover{
+    transform: translateY(7px);
+}
+.blue h3:hover{
+    transform: translateY(7px);
+}
+
+/*콘텐츠2*/
+/*상담후기*/
+#bg2{
+    background: url(../images/bg2.jpg) no-repeat center;
+    height: 796px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin-top: 50px;
+}
+#bg2 h1{
+    padding: 20px 0 10px 0;
+    border-bottom: 3px solid rgb(129, 186, 254);
+    margin: 20px 0;
+    display: inline-block;
+}
+
+#bg2 h3{
+    color: rgb(129, 186, 254);
+    font-size: 20px;
+    background: #fff;
+    border: rgb(129, 186, 254) 2px solid;
+    border-radius: 15px;
+    display: inline-block;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -60px;
+    padding: 5px 15px;
+    z-index: 3;
+    transform: translateY(0px);
+    transition: all 0.6s;
+}
+.shadow{
+    width: 124px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: rgb(99, 153, 219);
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    margin-left: -60px;
+}
+#bg2 h3:hover{
+    transform: translateY(7px);
+}
+.simply-scroll{
+    width: 500px;
+    height: auto;
+    margin: auto;
+}
+.simply-scroll .simply-scroll-clip{
+    width: 100%;
+    height: 100%;
+}
+.simply-scroll .simply-scroll-list li{
+    width: auto;
+    height: auto;
+    margin-right: 20px;
+}
+/*상담후기*/
+/*이벤트*/
+#bg3{
+    background: url(../images/bg3.jpg) no-repeat center;
+    width: 100%;
+    height: 750px;
+    text-align: center;
+    margin-top: 100px;
+}
+#bg3 h1{
+    padding: 15px 0 10px 0;
+    border-bottom: 3px solid rgb(129, 186, 254);
+    margin: 15px 0;
+    display: inline-block;
+}
+.white{
+    width: 1253px;
+    height: 550px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin:50px auto;
+    box-shadow: 5px 6px 7px rgba(135, 109, 170, 0.6);
+}
+
+.white ul li{
+    float: left;
+    margin:90px 13px 0;
+}
+
+.event{
+    width: 378px;
+    height: 378px;
+    position: relative;
+    overflow: hidden;
+}
+.case{
+    position: absolute;
+    left: -20px;
+    bottom: -360px;
+    transform: translateY(0px);
+    transition: all 1s;
+}
+.event:hover .case{
+    transform: translateY(-250px);
+}
+
+.event2{
+    width: 378px;
+    height: 378px;
+    position: relative;
+    overflow: hidden;
+    top: 90px;
+    left: 20px;
+}
+.fish{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    transform: translate(0);
+    transition: all 1s;
+}
+.event2:hover .fish{
+    transform: translate(-110px,-30px);
+}
+
+.fish2{
+    position: absolute;
+    left: 10px;
+    bottom: 50px;
+    transform: translate(0);
+    transition: all 1s;
+}
+.event2:hover .fish2{
+    transform: translate(100px,-30px);
+}
+
+.event3{
+    width: 378px;
+    height: 378px;
+    position: relative;
+    overflow: hidden;
+    right: -430px;
+    top: -290px;
+}
+.book{
+    position: absolute;
+    bottom: -20px;
+    left: 10px;
+    transform: rotate(-10deg);
+    transition: all 0.5s;
+}
+.book2{
+    position: absolute;
+    bottom: -15px;
+    right: 20px;
+    transform: rotate(-10deg);
+    transition: all 0.5s;
+}
+
+.event3:hover .book{
+    transform: rotate(0);
+}
+.event3:hover .book2{
+    transform: rotate(5deg);
+}
+
+.melti2{
+    transform: translateX(230px);
+}
+/*이벤트*/
+
+/*푸터*/
+#footer{
+    background: url(../images/bg4.jpg) no-repeat center;
+    height: 300px;
+    margin-top: 100px;
+}
+.footer_inner{
+    width: 1320px;
+    margin: auto;
+}
+.footer_inner ul{
+    float: right;
+}
+.footer_inner ul li{
+    float: left;
+    margin: 30px 5px 0;
+    opacity: 0.5;
+    transition: all 0.4s;
+}
+.logo2{
+    margin-top: 30px;
+}
+.footer_inner p{
+    padding-top: 40px;
+}
+
+.footer_inner li:hover{
+    opacity: 1;
+}
+/*푸터*/
+/*탑버튼*/
+.top{
+    position:fixed; 
+    bottom:50px; 
+    right:50px; 
+    display:none;
+  }
+/*탑버튼*/

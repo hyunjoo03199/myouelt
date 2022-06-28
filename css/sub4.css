@@ -1,0 +1,455 @@
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{text-decoration: none; color: rgb(255, 174, 184);}
+body{
+    font-family: "LotteMartDream";
+    font-size: 16px;
+    line-height: 26px;
+    color: #333;
+}
+@font-face {
+    font-family: 'LotteMartDream';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff2') format('woff2'), url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'LotteMartDream';
+    font-style: normal;
+    font-weight: 700;
+    src: url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff2') format('woff2'), url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'LotteMartDream';
+    font-style: normal;
+    font-weight: 300;
+    src: url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff2') format('woff2'), url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff') format('woff');
+  }
+  .lottemartdream * {
+   font-family: 'LotteMartDream', sans-serif;
+  }
+  /*헤더*/
+  #header{
+    width: 100%;
+    height: 110px;
+}
+.header_inner{
+    width: 1324px;
+    margin: auto;
+    color: #fff;
+}
+.logo{
+    padding-top: 15px;
+}
+.nav{
+  float: right;
+  margin-top: 10px;
+}
+.nav> li{
+  float: left;
+  margin: 0 30px;
+}
+.nav> li> a{
+  display: block;
+  padding: 30px 0 20px;
+  width: 100px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.nav> li> a:hover{
+  background-color: #fff;
+  border-bottom: 2px solid rgb(255, 174, 184);
+}
+
+/*서브메뉴 꾸미기*/
+.sub{
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 8px 7px rgba(156, 156, 156, 0.6);
+  width: 100%;
+  height: 290px;
+  position: absolute;/*body가 기준*/
+  left: 0;
+  top: 100px;
+  display: none;/*안보이게 만들어 주기!*/
+  z-index:99;
+}
+.sub div{
+  width: 1324px;
+  margin: auto;
+}
+.sub ul{
+  float: left;
+  width: 100px;/*메인메뉴 a태그랑 같은 너비*/
+  text-align: center;
+  padding: 20px 0;
+  box-sizing: border-box;
+  margin: 0 30px;
+}
+.sub div ul:nth-child(1){
+  margin-left: 713px;
+}
+
+.sub ul a{
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  padding: 15px 0;
+}
+.sub ul a:hover{
+  border-bottom: 2px solid rgb(255, 174, 184);
+}
+/*서브메뉴 꾸미기*/
+/*배경*/
+    #comu{
+        background: url(../images/comu_bg.jpg) no-repeat center;
+        margin: auto;
+        width: 100%;
+        height: 472px;
+        overflow: hidden;
+        text-align: center;
+    }
+    .inner{
+      width: 1320px;
+      height: 472px;
+      position: relative;
+      margin: auto;
+    }
+    #comu h1{
+      color: #fff;
+      border: 2px #fff solid;
+      display: inline-block;
+      margin-top: 180px;
+      padding: 12px 20px;
+      border-radius: 20px;
+    }
+    .cloud1{
+        position: absolute;
+        z-index: 1;
+        bottom: 100px;
+        right: -600px;
+        animation: cloud 20s ease-out infinite;
+    }
+    .cloud2{
+        position: absolute;
+        right: -900px;
+        animation: cloud 25s ease-out infinite;
+      
+    }
+    /*구름움직임*/
+    @keyframes cloud{
+      0% {transform: translateX(0);}
+      100%{transform: translateX(-2700px);}
+    }
+    /*구름움직임*/
+    .bird_body{
+        position: absolute;
+        z-index: 3;
+        right: 540px;
+        top: 100px;
+    }
+    .bird_left{
+        position: absolute;
+        z-index: 4;
+        right: 590px;
+        top: 85px;
+        animation: bird_left 1s ease infinite alternate;
+    }
+    .bird_right{
+        position: absolute;
+        z-index: 2;
+        right: 500px;
+        top: 100px;
+        animation: bird_right 1s ease infinite alternate;
+    }
+    #bird{
+      animation: bird 1s ease infinite alternate;
+      position: absolute;
+      right:-250px;
+      top: 35px;
+    }
+    /*새움직임*/
+    @keyframes bird_left{
+      0%{transform-origin: right;
+        transform: rotate(0deg);}
+      100%{transform-origin: right;
+        transform: rotate(20deg);}
+    }
+    @keyframes bird_right{
+      0%{transform-origin: left;
+        transform: rotate(0deg);}
+      100%{transform-origin: left;
+        transform: rotate(-20deg);}
+    }
+    @keyframes bird{
+      0%{transform: translateY(0px);}
+      100%{transform: translateY(10px);}
+    }
+    /*새움직임*/
+    .ice1{
+        position: absolute;
+        z-index: 1;
+        top: -60px;
+        left: -600px;
+    }
+    .ice2{
+        position: absolute;
+        z-index: 5;
+        bottom: -330px;
+        left: -300px;
+    }
+    .ice3{
+        position: absolute;
+        z-index: 1;
+        right: -470px;
+        bottom: -60px;
+    }
+    .ice4{
+        position: absolute;
+        z-index: 3;
+        right: -400px;
+        bottom: -260px;
+    }
+    .ice5{
+        position: absolute;
+        z-index: 6;
+        right: -550px;
+        bottom: -110px;
+    }
+    .character{
+        position: absolute;
+        z-index: 2;
+        top: 80px;
+        left: 0px;
+    }
+    .nest{
+        position: absolute;
+        z-index: 4;
+        right: -120px;
+        bottom: 170px;
+    }
+    /*탭*/
+    #bg_box{
+      margin: auto;
+      width: 1320px;
+      height: 1430px;
+      border-radius: 0 0 20px 20px;
+      background-color: rgb(192, 234, 253);
+    }
+    .tab{
+      width:1200px;
+      height: 1400px;
+      margin-left: 60px;
+    }
+    .tabnav{
+      width:800px; 
+      height: 90px;
+      position: relative;
+      z-index: 80;
+      top: -90px;
+      overflow: hidden;
+      text-align: center;
+    }
+    .tabnav li{
+      float: left;
+      margin-right: 5px;
+    }
+    .tabnav li a{ 
+      display: block;
+      box-sizing: border-box;
+      width: 145px;
+      height: 90px;
+      padding-top: 30px;
+      font-size: 20px;
+      color: #fff;
+      border-radius: 20px 20px 0 0;
+      background-color: rgb(130, 186, 255);
+    }
+    
+    /* 탭메뉴 클릭했을 때 변화 꾸미기 */
+    .tabnav li .active{
+      border-bottom: 1px solid #fff;
+    }
+    .tabnav li a:hover,
+    .tabnav li a.active{
+      background:#fff;
+      color:rgb(130, 186, 255);
+    }
+    
+    /* 탭컨테츠 꾸미기 */
+    .tabcontent{
+      width: 1200px;
+      height: 1360px;
+      background-color: #fff;
+      border-radius: 0 20px 20px 20px;
+      position: relative;
+      top: -90px;
+    }
+    /*탭*/
+    /*공지사항*/
+    .title_box{
+      display: inline-block;
+      background-color: rgb(130, 186, 255);
+      color: #fff;
+      width: 1150px;
+      height: 55px;
+      box-sizing: border-box;
+      border-radius: 10px;
+      margin-left: 25px;
+      margin-top: 30px;
+    }
+    .title_box ul li{
+      float: left;
+      margin-top: 13px;
+      font-weight: bold;
+      font-size: 22px;
+    }
+    .title_box ul li:nth-child(1){
+      margin-left: 20px;
+    }
+    .title_box ul li:nth-child(2){
+      margin-right: 485px;
+      margin-left: 460px;
+    }
+
+    .notice_box{
+      background-color: #fff;
+      color: #555;
+      width: 1150px;
+      height: 55px;
+      box-sizing: border-box;
+      border-radius: 10px;
+      border: rgb(130, 186, 255) solid 3px;
+      border-radius: 10px;
+      margin-top: 20px;
+      margin-left: 25px;
+    }
+    .notice_box ul li{
+      float: left;
+      margin-top: 13px;
+      font-size: 22px;
+    }
+    .notice_box ul li:nth-child(1){
+      margin-left: 25px;
+      font-weight: bold;
+    }
+    .notice_box ul li:nth-child(2){
+      margin-left: 45px;
+    }
+    .notice_box ul li:nth-child(3){
+      float: right;
+      margin-right: 25px;
+    }
+    .notice_box a{
+      color: #555;
+    }
+    .notice_box ul li:nth-child(2):hover{
+      color: rgb(130, 186, 255);
+    }
+    /*공지사항*/
+    /*qna 아코디언*/
+    #board { 
+      width: 1150px;
+      margin-left: 25px;
+    }
+    #board li{ 
+      width:100%;
+      margin-bottom: 20px;
+    }
+    #board li a{ 
+      display:block;
+      border:1px solid rgb(130, 186, 255);
+      border-radius: 10px;
+      padding:10px 20px;  
+      background: url(../images/up.png) no-repeat 95% 50%;
+      color: #555;
+      font-size: 20px;
+    }
+    #board li:hover a{  
+      font-weight:bold; 
+      background-color: #fff;
+      color: rgb(130, 186, 255);
+    }
+    #board li.on a{
+      font-weight:bold; 
+      background-color: #fff;
+      color: rgb(130, 186, 255);
+      background: #fff url(../images/dawn.png) no-repeat 95% 50%;
+    }
+    #board li div{ 
+      width:100%; 
+      border:1px solid rgb(130, 186, 255);
+      background-color: rgb(255, 251, 230);
+      border-top:0;
+      border-radius: 0 0 15px 15px;
+      padding:10px 20px; 
+      box-sizing:border-box; 
+      height:70px;
+      display:none;
+    }
+    #board li div p{
+      font-size: 20px;
+    }
+    /*qna 아코디언*/
+    /*버튼*/
+    .btn{
+      position: relative;
+      bottom: 75px;
+      right: -1080px;
+      z-index: 7;
+    }
+    .btn h3{
+      color: rgb(130, 186, 255);
+      font-size: 20px;
+      border: rgb(130, 186, 255) solid 2px;
+      border-radius: 30px;
+      display: inline-block;
+      padding: 5px 10px;
+      background-color: #fff;
+      position: absolute;
+      transition: all 0.6s;
+    }
+    .btn h3:hover{
+      color: #fff;
+      background-color: rgb(130, 186, 255);
+    }
+    /*버튼*/
+    /*푸터*/
+#footer{
+  background: url(../images/bg4.jpg) no-repeat center;
+  height: 300px;
+  margin-top: 80px;
+}
+.footer_inner{
+  width: 1320px;
+  margin: auto;
+}
+.footer_inner ul{
+  float: right;
+}
+.footer_inner ul li{
+  float: left;
+  margin: 30px 5px 0;
+  opacity: 0.5;
+  transition: all 0.4s;
+}
+.logo2{
+  margin-top: 30px;
+}
+.footer_inner p{
+  padding-top: 40px;
+}
+
+.footer_inner li:hover{
+  opacity: 1;
+}
+/*푸터*/
+/*탑버튼*/
+.top{
+  position:fixed; 
+  bottom:50px; 
+  right:50px; 
+  display:none;
+}
+/*탑버튼*/
+
