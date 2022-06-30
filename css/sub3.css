@@ -125,7 +125,7 @@ body{
   background: #fff;
   font-size: 20px;
   box-sizing: border-box;
-  transform: scale(95%);
+  transform: scale(0.9);
   transition: all 1s;
 }
 .circle:nth-child(1){
@@ -159,7 +159,7 @@ body{
   padding-top: 30px;
 }
 .circle:hover{
-  transform: scale(100%);
+  transform: scale(1);
 }
 /*상담절차*/
 /*주의사항*/

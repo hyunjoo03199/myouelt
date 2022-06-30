@@ -5,7 +5,7 @@ body{
     font-family: "LotteMartDream";
     font-size: 16px;
     line-height: 26px;
-    color: #333;
+    color: #555;
 }
 @font-face {
     font-family: 'LotteMartDream';
@@ -100,3 +100,321 @@ body{
   border-bottom: 2px solid rgb(255, 174, 184);
 }
 /*서브메뉴 꾸미기*/
+/*배경*/
+#sub2_bg{
+  background: url(../images/sub2_bg.jpg) no-repeat center;
+  width: 100%;
+  height: 480px;
+  text-align: center;
+}
+#sub2_bg h1{
+  color: #fff;
+  display: inline-block;
+  padding: 20px;
+  border: #fff 3px solid;
+  border-radius: 20px;
+  margin-top: 180px;
+}
+/*배경*/
+/*콘탠츠*/
+#contents{
+  width: 1320px;
+  height: 1060px;
+  background: rgb(219, 238, 255);
+  border-radius: 20px;
+  margin: 70px auto;
+  text-align: center;
+}
+.title{
+  margin: 40px;
+}
+.box1{
+  width: 1130px;
+  height: 43px;
+  margin: 0px auto 10px;
+  border-radius: 15px;
+  border: rgb(130, 186, 255) 2px solid;
+  background: #fff;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-weight: 400;
+}
+#name{
+  font-size: 20px;
+  border: none;
+  font-weight: 400;
+  box-sizing: border-box;
+  padding-top: 8px;
+}
+#name2{
+  font-size: 20px;
+  border: none;
+  font-weight: 400;
+  box-sizing: border-box;
+  padding-top: 8px;
+  margin-left: 10px;
+}
+.one{
+  border-right: 2px solid rgb(130, 186, 255);
+  padding: 5px 28px 5px;
+  box-sizing: border-box;
+  margin-right: 10px;
+  margin-left: -50px;
+}
+.two{
+  border-right: 2px solid rgb(130, 186, 255);
+  padding: 5px 20px;
+  box-sizing: border-box;
+  margin-left: 110px;
+}
+.box2{
+  width: 1130px;
+  height: 43px;
+  margin: 0px auto 10px;
+  border-radius: 15px;
+  border: rgb(130, 186, 255) 2px solid;
+  background: #fff;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-weight: 400;
+  position: relative;
+}
+.box2 p{
+  display: inline-block;
+  margin-left: -170px;
+}
+#call{
+  border: 2px solid rgb(130, 186, 255);
+  padding: 6px;
+  transform: translateY(-5px);
+}
+
+#phone{
+  font-size: 20px;
+  border: none;
+  font-weight: 400;
+  box-sizing: border-box;
+  padding-top: 8px;
+}
+input[type="radio"],
+input[type="radio"]:checked{
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  margin-left: 20px;
+  transform: translateY(7px);
+  cursor: pointer;
+}
+input[type="radio"]{
+  background: url(../images/none.png) no-repeat left;
+}
+input[type="radio"]:checked{
+  background: url(../images/check.png);
+}
+.checked{
+  display: inline-block;
+  transform: translateY(-3px);
+  box-sizing: border-box;
+  margin-left: 145px;
+}
+.three{
+  border-right: 2px solid rgb(130, 186, 255);
+  padding: 3px 22px;
+  box-sizing: border-box;
+  margin-right: 10px;
+  margin-left: -107px;
+  position: absolute;
+  top: 3px;
+}
+#main{
+  width: 1135px;
+  height: 775px;
+  background: #fff;
+  border-radius: 15px;
+  border: rgb(130, 186, 255) 2px solid;
+  margin: auto;
+  overflow: hidden;
+}
+#main h3{
+  background: rgb(130, 186, 255);
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  box-sizing: border-box;
+  padding-top: 15px;
+  height: 63px;
+  border: 2px solid rgb(130, 186, 255);
+}
+.coun{
+  width: 150px;
+  text-align: left;
+  padding-top: 10px;
+  font-size: 20px;
+  display: inline-block;
+  margin-left: -300px;
+}
+textarea{
+  border: 2px solid rgb(130, 186, 255);
+  border-radius: 15px;
+  padding: 10px 0 0 10px;
+  width: 1080px;
+  height: 500px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 400;
+}
+input:focus, select:focus, option:focus, textarea:focus, button:focus{
+	outline: none;
+}
+.time{
+  font-size: 20px;
+  width: 170px;
+  display: inline-block;
+  margin-left: 500px;
+  transform: translateY(-25px);
+}
+input[type="date"]{
+  border: 2px solid rgb(130, 186, 255);
+  width: 100px;
+  height: 38px;
+
+}
+input[type=time]{
+  border: 2px solid rgb(130, 186, 255);
+  width: 100px;
+  height: 38px;
+  margin-top: 20px;
+}
+.coun p{
+  margin-bottom: 10px;
+}
+/*이용동의*/
+#agree1{
+  width: 1320px;
+  height: 285px;
+  background: rgb(219, 238, 255);
+  text-align: center;
+  border-radius: 15px;
+  margin-top: 100px;
+}
+#agree1 p{
+  display: inline-block;
+  font-size: 18px;
+  text-align: left;
+  padding: 10px;
+}
+.agree2{
+  width: 1265px;
+  height: 205px;
+  background: #fff;
+  display: inline-block;
+  text-align: center;
+}
+.agree3{
+  width: 1255px;
+  height: 190px;
+  overflow: auto;
+  display: inline-block;
+  box-sizing: border-box;
+  padding-left: 10px;
+  margin-top: 5px;
+}
+.agree3 li{
+  margin-bottom: 20px;
+  text-align: left;
+}
+.agree3::-webkit-scrollbar {/*스크롤바 전체*/
+  width: 20px;
+}
+.agree3::-webkit-scrollbar-thumb {/*스크롤바 막대*/
+  background-color: rgb(130, 186, 255);
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+.agree3::-webkit-scrollbar-track {/*스크롤바 막대 외부*/
+  background-color: rgb(207, 207, 207);
+}
+input[type="checkbox"],
+input[type="checkbox"]:checked{
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  margin-left: 10px;
+  transform: translateY(7px);
+  cursor: pointer;
+}
+input[type="checkbox"]{
+  background: url(../images/none.png) no-repeat left;
+}
+input[type="checkbox"]:checked{
+  background: url(../images/check.png);
+}
+#agree4{
+  display: inline-block;
+  padding: 5px;
+  transform: translateX(460px);
+}
+#button{
+  text-align: center;
+  margin-top: 300px;
+}
+input[type="submit"],
+input[type="reset"]{
+  width: 100px;
+  height: 50px;
+  border: none;
+  font-size: 20px;
+  margin: 80px 5px;
+  background-color: rgb(188, 224, 255);
+  color: #fff;
+  border-radius: 10px;
+  font-weight: bold;
+}
+input[type="submit"]:hover{
+  background-color: rgb(130, 186, 255);
+}
+input[type="reset"]:hover{
+  background-color: rgb(130, 186, 255);
+}
+/*이용동의*/
+/*콘탠츠*/
+/*푸터*/
+#footer{
+  background: url(../images/bg4.jpg) no-repeat center;
+  height: 300px;
+}
+.footer_inner{
+  width: 1320px;
+  margin: auto;
+}
+.footer_inner ul{
+  float: right;
+}
+.footer_inner ul li{
+  float: left;
+  margin: 30px 5px 0;
+  opacity: 0.5;
+  transition: all 0.4s;
+}
+.logo2{
+  margin-top: 30px;
+}
+.footer_inner p{
+  padding-top: 40px;
+}
+
+.footer_inner li:hover{
+  opacity: 1;
+}
+/*푸터*/
+/*탑버튼*/
+.top{
+  position:fixed; 
+  bottom:50px; 
+  right:50px; 
+  display:none;
+}
+/*탑버튼*/
