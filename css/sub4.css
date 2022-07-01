@@ -299,6 +299,19 @@ body{
  right: 650px;
  z-index: 99;
 }
+.popup4{
+  position: fixed;
+  z-index: 97;
+  top: 100px;
+  left: 600px;
+  display: none;
+}
+.popup4 p{
+ position: fixed;
+ top: 120px;
+ right: 650px;
+ z-index: 99;
+}
 /*팝업*/
     /*공지사항*/
     .title_box{
