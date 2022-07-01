@@ -14,3 +14,11 @@ $(function(){
         $('.popup').hide();
     });
 });
+$(function(){
+    $('.popup3').click(function(){
+        $('.popup4').fadeIn();
+    });
+    $('.popup4 a').click(function(){
+        $('.popup4').hide();
+    });
+});
