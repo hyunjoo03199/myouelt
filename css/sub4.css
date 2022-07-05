@@ -6,8 +6,6 @@ body{
     font-size: 16px;
     line-height: 26px;
     color: #333;
-    width: 1920px;
-    margin: auto;
 }
 @font-face {
     font-family: 'LotteMartDream';
@@ -74,7 +72,7 @@ body{
   left: 0;
   top: 100px;
   display: none;/*안보이게 만들어 주기!*/
-  z-index:99;
+  z-index:95;
 }
 .sub div{
   width: 1324px;
@@ -290,7 +288,7 @@ body{
     /*팝업*/
 .popup{
   position: fixed;
-  z-index: 97;
+  z-index: 99;
   top: 50%;
   margin-top: -380px;
   left: 50%;
@@ -308,7 +306,7 @@ body{
 }
 .popup4{
   position: fixed;
-  z-index: 97;
+  z-index: 99;
   top: 50%;
   margin-top: -380px;
   left: 50%;
