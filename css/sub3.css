@@ -496,7 +496,7 @@ body{
   background: url(../images/bg4.jpg) no-repeat center;
   height: 300px;
   position: relative;
-  top: 4400px;
+  margin-top: 90px;
 }
 .footer_inner{
   width: 1320px;
