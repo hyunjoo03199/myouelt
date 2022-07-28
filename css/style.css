@@ -6,6 +6,7 @@ body{
     font-size: 16px;
     line-height: 26px;
     color: #333;
+    min-width: 1320px;
 }
 @font-face {
     font-family: 'LotteMartDream';
@@ -115,7 +116,7 @@ body{
     margin-bottom: 20px;
 }
 .contents1{
-    width: 1324px;
+    width: 1320px;
     height: 750px;
     border-bottom: 3px solid rgb(255, 174, 184);
     border-top: 3px solid rgb(255, 174, 184);
@@ -123,7 +124,7 @@ body{
     top: 50%;
     left: 50%;
     margin-top: -380px;
-    margin-left: -650px;
+    margin-left: -660px;
 }
 .test{
     text-align: center;
